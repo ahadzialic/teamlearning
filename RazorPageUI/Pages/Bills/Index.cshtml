@@ -1,0 +1,71 @@
+﻿@page
+@model RazorPageUI.Pages.Bills.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<form>
+    <p>
+        Naziv usluge: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Traži" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Bill[0].ProductofferName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bill[0].UnitPrice)
+            </th>
+            <th>
+                Količina jedinične mjere
+            </th>           
+            <th>
+                @Html.DisplayNameFor(model => model.Bill[0].VAT)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Bill) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductofferName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            @if (!item.UnitPriceAmount1.Equals(null))
+            {
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPriceAmount1)
+            </td>
+            }
+            else
+            {
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPriceAmount2)
+            </td>
+            }
+            <td>
+                @Html.DisplayFor(modelItem => item.VAT)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

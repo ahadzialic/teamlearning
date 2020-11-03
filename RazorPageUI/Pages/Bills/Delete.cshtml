@@ -1,0 +1,52 @@
+﻿@page
+@model RazorPageUI.Pages.Bills.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Bill</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.ProductofferName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.ProductofferName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.UnitPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.UnitPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.UnitPriceAmount1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.UnitPriceAmount1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.UnitPriceAmount2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.UnitPriceAmount2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.VAT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.VAT)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Bill.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

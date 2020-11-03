@@ -1,0 +1,54 @@
+﻿@page
+@model RazorPageUI.Pages.Bills.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Bill</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Bill.ProductofferName" class="control-label"></label>
+                <input asp-for="Bill.ProductofferName" class="form-control" />
+                <span asp-validation-for="Bill.ProductofferName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bill.UnitPrice" class="control-label"></label>
+                <input asp-for="Bill.UnitPrice" class="form-control" />
+                <span asp-validation-for="Bill.UnitPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bill.UnitPriceAmount1" class="control-label"></label>
+                <input asp-for="Bill.UnitPriceAmount1" class="form-control" />
+                <span asp-validation-for="Bill.UnitPriceAmount1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bill.UnitPriceAmount2" class="control-label"></label>
+                <input asp-for="Bill.UnitPriceAmount2" class="form-control" />
+                <span asp-validation-for="Bill.UnitPriceAmount2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bill.VAT" class="control-label"></label>
+                <input asp-for="Bill.VAT" class="form-control" />
+                <span asp-validation-for="Bill.VAT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

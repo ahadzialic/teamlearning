@@ -1,0 +1,64 @@
+﻿@page
+@model RazorPageUI.Pages.BillsGSM.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>BillGSM</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BillGSM.ProductofferID" class="control-label"></label>
+                <input asp-for="BillGSM.ProductofferID" class="form-control" />
+                <span asp-validation-for="BillGSM.ProductofferID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BillGSM.ProductofferNameGSM" class="control-label"></label>
+                <input asp-for="BillGSM.ProductofferNameGSM" class="form-control" />
+                <span asp-validation-for="BillGSM.ProductofferNameGSM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BillGSM.UnitPriceGSM" class="control-label"></label>
+                <input asp-for="BillGSM.UnitPriceGSM" class="form-control" />
+                <span asp-validation-for="BillGSM.UnitPriceGSM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BillGSM.UnitPriceAmountGSM1" class="control-label"></label>
+                <input asp-for="BillGSM.UnitPriceAmountGSM1" class="form-control" />
+                <span asp-validation-for="BillGSM.UnitPriceAmountGSM1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BillGSM.UnitPriceAmountGSM2" class="control-label"></label>
+                <input asp-for="BillGSM.UnitPriceAmountGSM2" class="form-control" />
+                <span asp-validation-for="BillGSM.UnitPriceAmountGSM2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BillGSM.ValueWithoutVAT" class="control-label"></label>
+                <input asp-for="BillGSM.ValueWithoutVAT" class="form-control" />
+                <span asp-validation-for="BillGSM.ValueWithoutVAT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BillGSM.ReleaseDate" class="control-label"></label>
+                <input asp-for="BillGSM.ReleaseDate" class="form-control" />
+                <span asp-validation-for="BillGSM.ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

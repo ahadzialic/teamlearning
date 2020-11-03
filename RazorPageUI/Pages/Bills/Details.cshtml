@@ -1,0 +1,49 @@
+﻿@page
+@model RazorPageUI.Pages.Bills.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Bill</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.ProductofferName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.ProductofferName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.UnitPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.UnitPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.UnitPriceAmount1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.UnitPriceAmount1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.UnitPriceAmount2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.UnitPriceAmount2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bill.VAT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bill.VAT)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Bill.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
