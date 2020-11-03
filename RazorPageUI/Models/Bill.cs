@@ -12,7 +12,7 @@ namespace RazorPageUI.Models
     {
         public int ID { get; set; } // šifra
 
-        [Display(Name = "Naziv usluge"), StringLength(10)]
+        [Display(Name = "Naziv  usluge"), StringLength(10)]
         [Column(TypeName = "varchar(200)")]
         public string ProductofferName { get; set; }
 
