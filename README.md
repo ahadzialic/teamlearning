@@ -5,7 +5,8 @@ This project is created using Visual Studio. Prerequisites are:
 
 Template for this project is ASP.NET Core Web Application and Web Application (because of razor pages content)
 ## Project files:
-##Pages folders 
+Here's an overview of the main project folders and files
+## Pages folders 
 Contains Razor pages and supporting files. Each Razor page is a pair of files:
 * A .cshtml file that contains HTML markup with C# code using Razor syntax.
 * A .cshtml.cs file that contains C# code that handles page events.
