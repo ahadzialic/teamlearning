@@ -5,7 +5,7 @@ After creating project with name RazorPageUI, right-click the RazorPagesUI proje
 Right click the Models folder. Select Add > Class. Name the class Bill.
 See Bill.cs for data model properties. The app's model classes use [Entity Framework Core (EF Core)](https://docs.microsoft.com/en-us/ef/core/) to work with the database. 
 
-## Scaffolding data model 
+### Scaffolding data model 
 The scaffolding tool produces pages for Create, Read, Update, and Delete (CRUD) operations for the bill model.
 Create a Pages/Bills folder: 
 * Right click on the Pages folder > Add > New Folder.
@@ -15,7 +15,7 @@ Complete the Add Razor Pages using Entity Framework (CRUD) dialog:
 *Model class : Bill 
 *In the Data context class row, select the + (plus) sign and change the generated name from RazorPageUI.Models.RazorPagesBillContext to RazorPageUI.Data.RazorPagesBillContext. It creates the database context class with the correct namespace.
 
-## Initial migration 
+### Initial migration 
 This is for working in local database. Creating local database-schema. We will use Package Manager Console (PMC) for: 
 * Add initial migration
 * Update the database with the initial migration.
