@@ -10,8 +10,11 @@ The scaffolding tool produces pages for Create, Read, Update, and Delete (CRUD) 
 Create a Pages/Bills folder: 
 * Right click on the Pages folder > Add > New Folder.
 * Name the folder Bills
+
 Right click on the Pages/Bills folder > Add > New Scaffolded Item. In the Add Scaffold dialog, select Razor Pages using Entity Framework (CRUD) > Add.
+
 Complete the Add Razor Pages using Entity Framework (CRUD) dialog:
+
 * Model class : Bill 
 * In the Data context class row, select the + (plus) sign and change the generated name from RazorPageUI.Models.RazorPagesBillContext to RazorPageUI.Data.RazorPagesBillContext. It creates the database context class with the correct namespace.
 
