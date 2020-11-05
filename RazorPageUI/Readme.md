@@ -19,11 +19,13 @@ Complete the Add Razor Pages using Entity Framework (CRUD) dialog:
 This is for working in local database. Creating local database-schema. We will use Package Manager Console (PMC) for: 
 * Add initial migration
 * Update the database with the initial migration.
-For navigate to PMC, click Tools, select NuGet Package Manager > Package Manager Console. Commands are:
+For navigate to PMC, click Tools, select NuGet Package Manager > Package Manager Console.
+
+Commands are:
 
 `Add-Migration InitialCreate`
 
 `Update-Database.`
 
-The migrations command generates code to create the initial database schema. The schema is based on the model specified in DbContext. 
+The migrations command generates code to create the initial database schema. The schema is based on the model specified in DbContext. Navigate to View > SQL Server Object Explorer to see your database schema.
 
