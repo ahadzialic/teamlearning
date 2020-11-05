@@ -5,6 +5,7 @@ Template for this project is ASP.NET Core Web Application and Web Application (b
 Contains Razor pages and supporting files. Each Razor page is a pair of files:
 * A .cshtml file that contains HTML markup with C# code using Razor syntax.
 * A .cshtml.cs file that contains C# code that handles page events.
+
 Supporting files have names that begin with an underscore. For example, the _Layout.cshtml file configures UI elements common to all pages. This file sets up the navigation menu at the top of the page and the copyright notice at the bottom of the page. For more information, see [Layout in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/layout?view=aspnetcore-3.1)
 ## wwwroot folder
 Contains static files, such as HTML files, JavaScript files, and CSS files. For more information, see [Static files in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/static-files?view=aspnetcore-3.1)
