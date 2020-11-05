@@ -8,8 +8,8 @@ See Bill.cs for data model properties. The app's model classes use [Entity Frame
 ## Scaffolding data model 
 The scaffolding tool produces pages for Create, Read, Update, and Delete (CRUD) operations for the bill model.
 Create a Pages/Bills folder: 
-*Right click on the Pages folder > Add > New Folder.
-*Name the folder Bills
+* Right click on the Pages folder > Add > New Folder.
+* Name the folder Bills
 Right click on the Pages/Bills folder > Add > New Scaffolded Item. In the Add Scaffold dialog, select Razor Pages using Entity Framework (CRUD) > Add.
 Complete the Add Razor Pages using Entity Framework (CRUD) dialog:
 *Model class : Bill 
