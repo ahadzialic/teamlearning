@@ -12,8 +12,8 @@ Create a Pages/Bills folder:
 * Name the folder Bills
 Right click on the Pages/Bills folder > Add > New Scaffolded Item. In the Add Scaffold dialog, select Razor Pages using Entity Framework (CRUD) > Add.
 Complete the Add Razor Pages using Entity Framework (CRUD) dialog:
-*Model class : Bill 
-*In the Data context class row, select the + (plus) sign and change the generated name from RazorPageUI.Models.RazorPagesBillContext to RazorPageUI.Data.RazorPagesBillContext. It creates the database context class with the correct namespace.
+* Model class : Bill 
+* In the Data context class row, select the + (plus) sign and change the generated name from RazorPageUI.Models.RazorPagesBillContext to RazorPageUI.Data.RazorPagesBillContext. It creates the database context class with the correct namespace.
 
 ### Initial migration 
 This is for working in local database. Creating local database-schema. We will use Package Manager Console (PMC) for: 
